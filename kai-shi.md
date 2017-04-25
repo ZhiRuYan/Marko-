@@ -1,12 +1,8 @@
-# 开始 {#开始}
-
----
+# 开始
 
 最简单的开始使用Marko的方法是使用[在线环境](http://markojs.com/try-online/)。你只需要在新标签页中打开它即刻。如果你更喜欢本地开发，请查看安装页面。
 
-## Hello World {#hello-world}
-
----
+## Hello World 
 
 Marko可以让你使用像HTML那样的语法来轻松地表示UI  
 **hello.marko**
@@ -31,10 +27,7 @@ html
 
 在浏览器中，当有关UI的数据发生改变时，Marko将自动高效地更新DOM。
 
-## 一个简单的组件 {#一个简单的组件}
-
----
-
+## 一个简单的组件 
 假设我们有一个`<button>`，我们希望给它添件一些点击事件：  
 **button.marko**
 
@@ -54,7 +47,7 @@ class {
 <button on-click(sayHi)>Click me!</button>
 ```
 
-## 添加 State {#添加-state}
+## 添加 State
 
 如何更新UI来响应操作呢?Marko的状态化组件让这个变得很容易。你需要做的是在你的组件中设置`this.state`。这使得你的视图可以使用新的`state`变量。当`this.state`中的值改变时，视图将自动重新渲染并且只更新DOM改变的部分。  
 **counter.marko**
