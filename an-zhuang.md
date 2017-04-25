@@ -1,8 +1,8 @@
-# 安装 {#安装}
+# 安装
 
 ---
 
-## 试试Marko {#试试marko}
+## 试试Marko
 
 ---
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 新建一个App {#新建一个app}
+## 新建一个App 
 
 ---
 
@@ -24,11 +24,10 @@ npm install # or yarn
 npm start
 ```
 
-# 直接使用 {#直接使用}
-
+# 直接使用 
 ---
 
-## 安装 {#安装-1}
+## 安装 
 
 Marko编译器运行在Node.js上，并且可以使用npm安装：
 
@@ -42,7 +41,7 @@ npm i marko --save
 yarn add marko
 ```
 
-## 浏览器环境 {#浏览器环境}
+## 浏览器环境
 
 假如我们有一个简单的页面，想要在浏览器中渲染：`hello.marko`
 
@@ -86,8 +85,7 @@ npm i --save lasso-marko
 lasso --main client.js --plugins lasso-marko --inject-into index.html
 ```
 
-## 服务器环境 {#服务器环境}
-
+## 服务器环境
 ### require Marko 页面 {#require-marko-页面}
 
 Marko允许你像`require`标准的JavaScript包一样引入页面，看下面`server.js`的例子：  
@@ -130,7 +128,7 @@ if(!process.env.NODE_ENV){
 }
 ```
 
-### 在服务器上跑一个简单的页面 {#在服务器上跑一个简单的页面}
+### 在服务器上跑一个简单的页面
 
 我们改写一下`server.js`以便于http服务器上运行一个页面  
 **server.js**
@@ -158,7 +156,7 @@ http.createServer((req,res) => {
 
 启动服务器（`node server.js`）然后打开浏览器访问`http://localhost:8080`,你就可以看到”Hello Marko”。
 
-### 初始化服务端渲染组件 {#初始化服务端渲染组件}
+### 初始化服务端渲染组件
 
 Marko会在闭合标签`</body>`之前自动注入需要运行在浏览器中的组件列表。因此，需要在渲染输出中包含一个`<body>`标签。
 
