@@ -1,18 +1,10 @@
 # 安装
 
----
-
 ## 试试Marko
-
----
 
 如果您只想在浏览器中尝试Marko，请转到我们的[Try Online](http://markojs.com/try-online)功能。您可以在浏览器中开发Marko应用程序。
 
----
-
 ## 新建一个App 
-
----
 
 如果你是刚开始使用marko，`marko-devtools`为你提供了一个入门程序帮助你快速开始学习。来一起开始吧：
 
@@ -25,7 +17,6 @@ npm start
 ```
 
 # 直接使用 
----
 
 ## 安装 
 
