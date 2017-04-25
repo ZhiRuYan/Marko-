@@ -1,6 +1,4 @@
-# 渲染 {#渲染}
-
----
+# 渲染 
 
 在渲染Marko视图之前，你需要先`require`它。  
 **example.js**
@@ -34,14 +32,12 @@ console.log(html);
 <button>Click me!</button>
 ```
 
-## 渲染方法 {#渲染方法}
-
+## 渲染方法 
 上面的例子我们使用`render ToString`方法渲染视图，但实际上有很多不同的方法可以用来渲染。
 
 许多渲染方法返回了一个`RenderResult`,这是一个带有helper方法的对象，和渲染输出的内容一起使用。
 
-### `renderSync(input)` {#rendersyncinput}
-
+### `renderSync(input)` 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
 | `input` | `object` | 用来渲染页面的输入数据 |
@@ -56,7 +52,7 @@ var result = view.renderSync({});
 result.appendTo(document.body);
 ```
 
-### `render(input)` {#renderinput}
+### `render(input)` 
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -74,7 +70,7 @@ resultPromise.then((result) => {
 })
 ```
 
-### `render(input,callback)` {#renderinputcallback}
+### `render(input,callback)`
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -90,8 +86,7 @@ view.render({},(err,result) => {
 })
 ```
 
-### `render(input,stream)` {#renderinputstream}
-
+### `render(input,stream)`
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
 | `input` | `Object` | 用来渲染页面的输入数据 |
@@ -109,7 +104,7 @@ http.createServer((req,res) = > {
 })
 ```
 
-### `render(input,out)` {#renderinputout}
+### `render(input,out)` 
 
 | 参数 | 类型 | 描述 |
 | :--- | :--- | :--- |
